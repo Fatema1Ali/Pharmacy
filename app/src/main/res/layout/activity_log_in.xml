@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/l1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignWithParentIfMissing="true"
+    android:layout_margin="@android:dimen/dialog_min_width_minor"
+    android:gravity="bottom|start|center_vertical"
+    android:orientation="vertical"
+    android:padding="1dp"
+    app:layout_constraintBaseline_creator="@android:integer/config_longAnimTime"
+    tools:context=".LogIn"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mm"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A3FFFFFF"/>
+<LinearLayout
+    android:padding="18dp"
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:layerType="software"
+        android:text="@string/UserName" />
+     />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:hint="enter your name"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Password">
+        android:textColor="@android:color/background_light" />
+    </TextView>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#DAE523E1"
+        android:baselineAligned="false"
+        android:text="@string/Login"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="263dp"
+        android:layout_height="17dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/bLogbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/com_facebook_button_background"
+        android:text="Login With Facebook"
+        tools:textColor="@color/browser_actions_bg_grey" />
+
+
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:width="@android:dimen/app_icon_size"
+        android:text="Need_To Register?"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        tools:textSize="14sp"
+        tools:width="@android:dimen/dialog_min_width_minor" />
+</LinearLayout>
+</RelativeLayout>

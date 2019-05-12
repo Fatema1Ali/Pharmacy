@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CheckPharm</string>
+    <string name="need_to_register">Need To Register?</string>
+    <string name="Password">Password</string>
+    <string name="facebook_app_id">769191536814834</string>
+    <string name="fb_login_protocol_scheme">fb769191536814834</string>
+    <string name="UserName">UserName</string>
+    <string name="Login">Login</string>
+    <string name="httphost">http://example.com</string>
+</resources>
